@@ -21,7 +21,7 @@ function validate()
     if(logged){
         alert ("Login successfully");
         localStorage.setItem("utilizador", JSON.stringify(utilizador));
-        window.location.href = "MAS.html";}
+        window.location.href = "index.html";}
         
     else
         alert("Invalid username and password");
