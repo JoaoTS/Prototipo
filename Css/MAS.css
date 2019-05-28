@@ -1,0 +1,33 @@
+.but{
+    display: inline-block;
+    margin-top: 20px; 
+   }
+.box{
+    width:80%;
+    height: 25%;
+    background-color: white;
+    margin-left:10%;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+.fotoinst0{
+    margin-top:10px;;
+    height: 90%;
+    border-radius: 5px;
+    float: left;
+    margin-left:1%;
+}
+.coisa{
+    margin-top:2%;
+}
+.loc1{
+    margin-top: 10px;
+    float: left;
+    margin-left: 3%;
+}
+.descini{
+    float: right;
+    margin-right: 10%;
+    text-align: left;
+}
+

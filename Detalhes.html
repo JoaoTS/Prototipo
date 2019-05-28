@@ -1,0 +1,72 @@
+<head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+
+        <link rel="stylesheet"  type="text/css" href="Css/detalhes.css">
+    </head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<!--_______________________________________navbar____________________________________________-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="margin-top:20px;">
+                        <a class="nav-link" href="MAS.html" style="margin-top: -5px;"> <img src="Imagens/logoverdadeiro.png" style="height:50px;">                                </a>
+                </div>
+                <div>
+                        <a style = "float:right; margin-right: 30px;color:black;" href="marcacoes.html">
+                        <i class="fa fa-calendar fa-3x"></i>
+                        </a>
+                    </div>
+                    <div>
+                      <a style = "float:right; margin-right: 30px;color:black;" href="Login.html">
+                      <i class="fas fa-user fa-3x" ></i>
+                      </a>
+                    </div>
+                  </ul>
+            </nav>
+
+            <!--_________________________________navbar______________________________________-->
+            <!--__________________________anuncios individual________________________________-->
+        <!--___________________________________________Descrição______________________________-->
+            <div id="caixainst">
+                <img id="imagem" src="Imagens/spa1.png">
+            <div id="principal">
+                <h1 id="titulo"></h1>
+                <label>Descrição:</label>
+                <p id="descricao"></p>
+                <div id="localização">
+                <p id="locbtn">Localização:</p>
+                
+                <p id="local"></p>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <iframe class="myFrame" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&q=Aveiro"></iframe>
+
+              
+            </div>
+          </div>
+                            <!--Modal Content-->
+                <p id="avalia">Avaliação: <i class="fas fa-star"></i><i class="fas fa-star">
+                </i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            </div>
+            <!--______________________________________Descrição_____________________________-->
+            <hr>
+            <!--________________________________Serviços__________________________________-->
+            <section id="servicos">
+    </section>
+        </div>
+        <!--_________________________________Serviços_________________________________-->
+            <!--__________________________anuncios individual________________________________-->
+
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&callback=myMap"></script>
+            <script src="JS/Institutos.js"></script>
+            <script src="Js/Marcacao.js"></script>
+            <script src="Js/detalhes.js"></script>
+</body>

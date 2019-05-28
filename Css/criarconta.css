@@ -1,0 +1,65 @@
+#white{
+    width:50%;height:100%;
+     background-color: white;
+}
+#instituto{
+    font-size:30px;color:black;
+    margin-right:48%;margin-top:48%;
+    float: right;
+}
+#text{
+    font-size:30px;color:white;
+    margin-left:48%;margin-top:48%;
+}
+#geral{
+width:100%;position:fixed;
+height:100%;
+}
+
+#oteu{
+width:25%;margin-right:37.5%;
+float:right;
+}
+#backarr{
+margin-top: 10px;
+}
+#black{
+    width:50%;height:100%;
+    background-color: black;
+}
+.back{
+    border: black 2px solid;border-radius: 50%;
+    height:50px;width:50px;
+    margin-top: 25px;margin-left: 25px;
+    background-color: blueviolet;position:fixed;
+    color: black;z-index: 1;
+}
+#formbase{
+    margin-top:10%;
+    margin-left: 10%;
+    position: fixed;margin: 0px transparent;
+    display: none;
+    width: 30%;
+    height:70%; 
+}
+.cab{
+    font-size: 25px;margin-top:5%;
+}
+#teste1{
+    display: none;
+}
+#teste2{
+    display: none;
+}
+.caixas{
+    width: 300px;
+    height: 40px;
+}
+#label2{
+    display: inline-block;
+    margin-left: 30%;
+    font-size: 25px;
+}
+#termos{
+    margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+.back{
+    border: black 2px solid;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: blueviolet;
+    color: black;
+}
+.fas{
+    margin-top: 10px;
+}
+.cab{
+    font-size: 20px;
+    margin-top:5%;
+}
+.formulario{
+    margin-left: 43.5%;
+    margin: 0px transparent;
+
+}
