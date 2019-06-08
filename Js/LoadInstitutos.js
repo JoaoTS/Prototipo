@@ -15,7 +15,7 @@ $(document).ready(function () {
                 institutos[value.nome]=value;
             }
         })
-    }else{console.log("seguiu este lol")
+    }else{console.log("seguiu este")
         institutos1 = {}
         institutos = {}
         if(url[1]!="_"){

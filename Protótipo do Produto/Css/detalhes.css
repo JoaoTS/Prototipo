@@ -1,37 +1,35 @@
 #caixainst{
     width: 90%;
-    height: 120%;
     background-color: wheat;
-    opacity: 70%;
+    opacity: 100%;
     margin-left:5%;
-    border-radius:10px;
+    height: max-content;
+}
+.btn-success{
+    margin-top: 30%;
 }
 #imagem{
-    border-radius:7px;
-    margin-top:2%;
-    margin-left: 2%;
-    max-width:30%;
-    max-height:30%;
+    margin-top: 2%;
+    height: 100%;
 }
-#titulo{
-    margin-left:3%;
-    width:30%;
+
+
+.fa-heart{
+    margin-top: 100%;
 }
 .servicos{
-    border-radius:7px;
     width: 93%;
     margin-left: 2%;
-    height:30px;
-    background-color:white;
+    height:40px;
+    background-color:rgb(170, 249, 255);
+    margin-bottom: 10px;
 }
 #principal{
-    border-radius: 7px;
     float:right;
     background-color: white;
     width:60%;
-    height:30%;
+    height:100%;
     margin-top:2%;
-    margin-right:5%;
 }
 #localização{
     margin-top:5%;
@@ -41,9 +39,6 @@
     text-align: left;
 }
 #avalia{
-    float: right;
-    margin-right:10%;
-    margin-top: 3%;
     margin-top: 8%;
 }
 .fa-star{
@@ -90,7 +85,7 @@ label{
     background-color: rgba(0,0,0,0.4); 
     border-radius:7px;
   }
-  #textcoiso{
+  .textcoiso{
         width: 100%;
         margin-top:25px;
   }
@@ -134,4 +129,9 @@ label{
   }
   .data{
 margin-left: 30%;
+  }
+  #inicial{
+      width: 98%;
+      margin-left: 1%;
+      max-height: 40%;
   }

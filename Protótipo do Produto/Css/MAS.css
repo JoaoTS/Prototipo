@@ -4,7 +4,7 @@
    }
 .box{
     width:80%;
-    height: 25%;
+    height: 30%;
     background-color: white;
     margin-left:10%;
     border-radius: 5px;
@@ -12,10 +12,11 @@
 }
 .fotoinst0{
     margin-top:10px;;
-    height: 90%;
+    max-height: 90%;
     border-radius: 5px;
     float: left;
     margin-left:1%;
+    max-width: 20%;
 }
 .coisa{
     margin-top:2%;
@@ -29,5 +30,19 @@
     float: right;
     margin-right: 10%;
     text-align: left;
+    max-width:40%; 
 }
 
+.classe{
+    margin-top: 0.5%;
+    width: 9.75%;
+    height: 60px;
+}
+.content {
+    width: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    top: 26%;
+    bottom: 0px;
+    background-color: aqua;
+}

@@ -12,17 +12,24 @@ $(document).ready(function () {
 
 /*______________LOAD____________*/
 institutos = JSON.parse(localStorage.getItem("institutos"));
-var url = window.location.href.split("#")[1];
+var url1 = window.location.href.split("#")[1];
+console.log(url1);
+url1 = url1.split("_").join(" ");
+url = ""
+for(i = 0; i<url1.length;i++){
+    url = url+ url1[i]
+    console.log(i)
+}
 console.log(url);
-url = url.split("_").join(" ");
 instituto = institutos[url];
+console.log(institutos[url]);
 $("#titulo").append(instituto.nome);
 $("#descricao").append(instituto.descricao);
 $("#local").append(instituto.localizacao);
 servicos = instituto.servicos;
 count = 1;
 $.each(servicos,function(index,value){
-    $("#servicos").append("<div id='servico"+count+"' class='servicos'><div id='textcoiso'><i id='plus"
+    $("#servicos").append("<div id='servico"+count+"' class='servicos'><div class='textcoiso'><i id='plus"
     +count+"' class='fas fa-plus' style='margin-top:5px'"+"onclick='plus("
     +count+")'></i><i id='minus"+count+"'class='fas fa-minus' style='display: none;' onclick='minus("+count+")'></i><span>"
     +value[0].nome+"</span><span id='preco"+count+"' class='precos'>"
@@ -35,8 +42,7 @@ $.each(servicos,function(index,value){
     +count+"'><option>06</option><option>07</option><option>08</option></select></td><td class='data'><select id='Hora"
     +count+"'><option>12:45</option><option>13:15</option><option>14:20</option></select></td></tr></table><div class='formmarc'>"
     +"<button type='button' class='btn btn-success' id='marcar"+count+"' onclick='Marcar("
-    +count+',"'+url+'"'+")'>Efetuar Marcação</button><button type='button' class='btn btn-secondary' id='clear"
-    +count+"'>Clear</button></div></form></div></div>")
+    +count+',"'+url+'"'+")'>Efetuar Marcação</button></div></form></div></div>")
     count++;
 })
 function datamarc(){
@@ -68,11 +74,13 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
+$("#locbtn").click(function(){
+
     modal.style.display = "none";
-  }
-}
+  
+});
+ 
+
 
 function plus(id){
         $("#plus"+id).hide();
@@ -89,7 +97,7 @@ function minus(id){
     $("#btnselect"+id).hide();
 }
 function Marcar(id,url){
-
+  if(JSON.parse(localStorage.getItem("utilizador"))!="ola"){
   institutos = JSON.parse(localStorage.getItem("institutos"));
   instituto = institutos[url];
   dia = document.getElementById("Dia"+id).value
@@ -104,6 +112,11 @@ function Marcar(id,url){
   localStorage.setItem("utilizadores", JSON.stringify(utilizadores));
   console.log("deu")
   console.log(marcacao.dia)
+  window.location="marcacoes.html";
+}
+  else{
+    alert("Você não está com a conta logada")
+  }
 }
 function mostrar(id){
     

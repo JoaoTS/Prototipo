@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Conta Instituto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <style>
+    .back{
+      border: black 2px solid;border-radius: 50%;
+      height:50px;width:50px;
+      margin-top: 25px;margin-left: 25px;
+      background-color: blueviolet;position:fixed;
+      color: black;z-index: 1;
+      position: relative;
+  }
+  .fa-arrow-left{
+    margin-top:10px;
+    position:relative;
+  }
+  .caixas{
+  width:85%;
+  margin-left: 10%
+  
+}
+.cab{
+  margin-left:10%;
+  margin-top: 8%;
+}
+.cab2{
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.serv{
+  margin-bottom: 5%;
+  margin-top:3px;
+}
+#subm{
+  margin-left: 5%;
+  min-width: 8%;
+  max-width: 40%;
+  margin-bottom: 5%;
+}
+.lbl{
+  margin-left:10%;
+  font-weight: 500;
+  font-style:italic; 
+}
+</style>
+  </head>
+  <body>
+
+    <img src="Imagens/fundoinst.jpg" style="position:fixed;min-width: 100%;z-index:-1;">
+    <a href="Criarconta.html" class="back btn"><i class="fas fa-arrow-left"></i></a>
+    <a href="index.html">
+    <img src="Imagens/logoverdadeiro.png"style="width:20%;margin-left:40%;margin-top:50px;">
+    </a>
+   
+    <form id="formtodo" style="width: 95%;">
+
+      <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+              <strong class="formulario cab">Username:</strong>
+              <br>
+              <input type="text" id="nome" class="form-control formulario caixas" placeholder="Nome de utilizador"></input>
+              <label class="lbl ca" id="lblnome"></label>
+              <br>
+              <strong class="formulario cab">E-mail:</strong>
+                <br>
+                <input type="text" id="email" class="form-control formulario caixas" placeholder="E-mail..."></input>
+                <label class="lbl" id="lblmail"></label>
+                <br>
+                <strong class="formulario cab">Password:</strong>
+                <br>
+                <input type="password" id="pass"class=" form-control formulario caixas" placeholder="Password..."></input>    
+                <label class="lbl" id="lblpass"></label>
+                <br>
+                <strong class="formulario cab">Localização:</strong>
+                    <br>
+                    <input type="text" id="local" class="form-control formulario caixas" placeholder="Localização..."></input>
+                  <label id="lblloc" class="lbl"></label>  
+                  </div>
+            
+            
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+              <div>
+                  <strong class="formulario cab" style="margin-top: 5%;">Foto Instituto</strong>
+                  <br>
+                  <input type="text" class="form-control caixas" placeholder="link da foto">
+                <div style="background-color: grey;margin-top:10%;height: 70%;border-radius: 7px;border: groove;width: 90%;margin-left: 7.5%;"><img id="ftinst" style="height: 100%; width: 100%;" src="Imagens/logoverdadeiro.png"></div>
+                
+            </div>
+            </div>
+
+          </div>
+          <strong class="cab2" style="background-color: white;border-radius:3px;">Serviço1:</strong>
+          <br>
+            <div class="row" style="margin-left: 4%;width:95%; border:blueviolet solid 3px;border-radius: 10px;">
+              
+              <div  class="col-lg-4 col-md-4 col-sm-6 col-12"> 
+                  <select id="tipo1" class="form-control serv" name="tipo1">
+                      <option value="" selected disabled hidden>Tipo de Serviço</option>
+                      <option value="cabelo">Cabelo</option>
+                      <option value="unhas">Unhas</option>
+                      <option value="remocao de cabelo">Remoçao de Cabelo</option>
+                      <option value="estetica">Estética</option>
+                      <option value="massagens">Massagens</option>
+                      <option value="maquilhagem">Maquilhagem</option>
+                      <option value="barba">Barba</option>
+                      <option value="spa">Spa</option>
+                    </select>
+                  </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <input id="preco1" class="form-control serv"type="text" placeholder="Preço do Serviço">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <input id="nome1" class="form-control serv"type="text" placeholder="Nome do Serviço">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <input id="duracao1"class="form-control serv"type="text" placeholder="Duração do Serviço (Minutos)">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12" style="height: 90%;">
+                <input id="desc1" class="form-control serv" type="text" placeholder="Descrição do Serviço">
+              </div>
+            </div>
+            <br>
+            <section id="outroserv"></section>
+            <button type="button" class="btn btn-success" id="btnadd" style="margin-left: 5%;">Adicionar Serviço</button>
+
+            <br>
+            <input type="checkbox" id="termos"  style="margin-left: 10px;">
+            <em style="width:50%;display: inline-block;margin-left:5px;font-weight:600">concorda com os termos de utilização...?</em>
+            <br>
+            <br>
+            <button class="btn btn-primary" type="button"id="subi">Submeter</button>
+          
+            </form>
+            
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="Js/Classes.js"></script>
+    <script src="Js/containstituto.js"></script>
+    <script src="Js/Utilizadores.js"></script>
+  </body>
+</html>
