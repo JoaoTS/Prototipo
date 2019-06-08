@@ -32,8 +32,7 @@
     margin-top:2%;
 }
 #localização{
-    margin-top:5%;
-    margin-left:3%;
+    margin-top:10%;
     float: left;
     width:50%;
     text-align: left;
@@ -41,15 +40,13 @@
 #avalia{
     margin-top: 8%;
 }
-.fa-star{
-    color:yellow;
-}
 hr{
     margin-top: 50px;
 }
 #descriçao{
     margin-left: 3%;
 }
+#desc{margin-top: 10%;}
 label{
     margin-left:3%;
 }
