@@ -111,7 +111,8 @@ $(document).ready(function () {
                 console.log(cont)      
                 for(i=1;i<=cont;i++){
                     console.log(i);
-                    tipo = $("#tipo"+i).val();
+                    tipo = $("#tipo"+i+" option:selected" ).val();
+                    console.log(tipo);
                     preco = $("#preco"+i).val();
                     snome = $("#nome"+i).val();
                     desc = $("#desc"+i).val();

@@ -36,7 +36,7 @@ $(document).ready(function () {
         tipo = url[2].split("_").join(" ")
         $.each(institutos1,function(index,value){
             $.each(value.servicos,function(ind,servico){
-                if(servico[0].tipo==tipo){
+                if(servico[0].tipo.toLowerCase()==tipo.toLowerCase()){
                     institutos[value.nome]=value;
                 }
             })
