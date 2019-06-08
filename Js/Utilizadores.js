@@ -22,7 +22,7 @@ $(document).ready(function () {
         "User1": new Cliente("user1","","user1@gmail.com",[],[]),
         "institutomanuel": new CInstituto("institutomanuel","","institutomanel@gmail.com","","963920013"),
         "AnaAzevedo": new Cliente("Ana1","a1234567","Azevedo234@gmail.com",[],[]),
-        "Instituto Pinto": new CInstituto("InstituitoPinto","","SalaoPinto@gmail.com","Salao do Pinto": new Instituto("Salao do Pinto","Apesar de sermos recentes temos muita experiência",{"servico1":[beardt,"20.2"],"servico2":[balimass,"5.3"],"servico3":[Balayage,"20"],"servico4":[maquilhar,"22,5"],"servico5":[Geoterapia,"23.5"]},"Aveiro","img1.png"),"256940012"),
+        "Instituto Pinto": new CInstituto("InstituitoPinto","","SalaoPinto@gmail.com",new Instituto("Salao do Pinto","Apesar de sermos recentes temos muita experiência",{"servico1":[beardt,"20.2"],"servico2":[balimass,"5.3"],"servico3":[Balayage,"20"],"servico4":[maquilhar,"22,5"],"servico5":[Geoterapia,"23.5"]},"Aveiro","img1.png"),"256940012"),
         "Spa Origins": new CInstituto("SpaOrigins","Origins256","origins@gmail.com",new Instituto("Spa Origins","Nosso compromisso com nossos clientes é primordial!",{"servico1":[arteunhas,"20.2"],"servico2":[beardt,"5.3"],"servico3":[mascaras,"15"],"servico4":[Crioterapia,"200"],"servico5":[depilacao,"20.5"],"servico6":[pedicure,"20.5"]},"Aveiro","spa1.png"),"256940012"),
         "MiguelSilva": new Cliente("MiguelSilva","silvaMiguel","miguel2434@gmail.com",[],[])
     }
