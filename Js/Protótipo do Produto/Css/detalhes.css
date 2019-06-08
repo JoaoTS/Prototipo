@@ -1,0 +1,134 @@
+#caixainst{
+    width: 90%;
+    background-color: wheat;
+    opacity: 100%;
+    margin-left:5%;
+    height: max-content;
+}
+.btn-success{
+    margin-top: 30%;
+}
+#imagem{
+    margin-top: 2%;
+    height: 100%;
+}
+
+
+.fa-heart{
+    margin-top: 100%;
+}
+.servicos{
+    width: 93%;
+    margin-left: 2%;
+    height:40px;
+    background-color:rgb(170, 249, 255);
+    margin-bottom: 10px;
+}
+#principal{
+    float:right;
+    background-color: white;
+    width:60%;
+    height:100%;
+    margin-top:2%;
+}
+#localização{
+    margin-top:10%;
+    float: left;
+    width:50%;
+    text-align: left;
+}
+#avalia{
+    margin-top: 8%;
+}
+hr{
+    margin-top: 50px;
+}
+#descriçao{
+    margin-left: 3%;
+}
+#desc{margin-top: 10%;}
+label{
+    margin-left:3%;
+}
+#minus1{
+    display: none;
+    margin-top:5px;
+}
+#lus1{
+    margin-top:5px;
+}
+#btnselect{
+    display:none;
+    float: right;
+    margin-top:45px;
+}
+.precos{
+    float: right;
+    font-size:15px;
+    margin-right: 5px;
+}
+.fa-euro-sign{
+    color:gold;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    border-radius:7px;
+  }
+  .textcoiso{
+        width: 100%;
+        margin-top:25px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    border: 1px solid #888;
+    width: 70%; 
+    height: 400px;
+    border-radius:7px;
+  }
+  iframe{
+      height:100%;
+  }
+  #tabela{
+      width:75%;
+      margin-left:12.5%;
+      height: 70%;
+      border: 1px black solid;
+  }
+  .th01{
+      text-align: center;
+      width: 25%;
+  }
+  .th02{
+    text-align: center;
+    width: 25%;
+  }
+  .th03{
+    text-align: center;
+    width: 25%;
+  }
+  #data0{
+      margin-left:5%;
+      margin-top: -15%;
+  }
+  .formmarc{
+     text-align: center;
+  }
+  .data{
+margin-left: 30%;
+  }
+  #inicial{
+      width: 98%;
+      margin-left: 1%;
+      max-height: 40%;
+  }
