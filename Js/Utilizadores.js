@@ -19,8 +19,10 @@ $(document).ready(function () {
 
 
     utilizadores = {
-        "jaquim": new Cliente("user1","","user1@gmail.com",[],[]),
-        "institutomanuel": new CInstituto("institutomanuel","","institutomanel@gmail.com","","963920013")
+        "User1": new Cliente("user1","","user1@gmail.com",[],[]),
+        "institutomanuel": new CInstituto("institutomanuel","","institutomanel@gmail.com","","963920013"),
+        "AnaAzevedo": new Cliente("Ana1","a1234567","Azevedo234@gmail.com",[],[]),
+        "InstitutoPinto": new CInstituto("InstituitoPinto","","SalaoPinto@gmail.com","","256940012")
     }
 
 
