@@ -3,3 +3,4 @@ Existem também algumas funcionalidades que se revelaram complicadas de elaborar
  e consequentemente despendemos mais tempo nelas, deixando pouco tempo disponível para trabalhar em outras funcionalidades, 
 que ficaram implantadas, mas não da maneira que nós desejávamos e pretendíamos.
 Como sempre Recomendamos fazer localStorage.clear()
+Ingnorar pasta "Protótipo do Produto" no repositório
