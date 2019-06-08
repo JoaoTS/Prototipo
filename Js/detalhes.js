@@ -111,7 +111,9 @@ function Marcar(id,url){
   utilizadores[utilizador.username]=utilizador
   localStorage.setItem("utilizadores", JSON.stringify(utilizadores));
   console.log("deu")
-  console.log(marcacao.dia)}
+  console.log(marcacao.dia)
+  window.location="marcacoes.html";
+}
   else{
     alert("Você não está com a conta logada")
   }
