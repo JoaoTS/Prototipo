@@ -42,19 +42,14 @@ margin-top: 10px;
     width: 30%;
     height:70%; 
 }
-.cab{
-    font-size: 25px;margin-top:5%;
-}
+
 #teste1{
     display: none;
 }
 #teste2{
     display: none;
 }
-.caixas{
-    width: 300px;
-    height: 40px;
-}
+
 #label2{
     display: inline-block;
     margin-left: 30%;
@@ -62,4 +57,7 @@ margin-top: 10px;
 }
 #termos{
     margin-top: 10px;
+}
+tr{
+    height:300px;
 }

@@ -1,58 +1,67 @@
 <head>
   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="Css/marcacoes.css">
     
 <link rel="stylesheet" type="text/css" href="Css/MAS.css">
 </head>
 <body>
-  
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"style="height:10%;width:100%">
         
       
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto" style="margin-top:20px;">
-            <a class="nav-link" href="#" style="margin-top: -5px;"> <img src="Imagens/logoverdadeiro.png" style="height:50px;">                                </a>
-    </div>
-    <div>
-        <a style = "float:right; margin-right: 30px;color:black;" href="marcacoes.html">
-        <i class="fa fa-calendar fa-3x"></i>
-        </a>
-    </div>
-        <div>
-          
-          <a style = "float:right; margin-right: 30px;color:black;" href="Login.html">
-          <i class="fas fa-user fa-3x" ></i>
+  
+            <a class="nav-link" href="" style="margin-top: 5px;"> <img src="Imagens/logoverdadeiro.png" style="height:50px; min-width: 5%;"></a>
+   
+          <div style="width: 5%;float:right;margin-right: 5%;" class="ml-auto">
+          <a id="log" class="login" href="Login.html">          
+            <i class="fas fa-user fa-3x" style="color: black;"></i>
           </a>
+          <div id="dropdownindex"class="dropdown d-none">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user fa-3x" ></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" >
+              <a class="dropdown-item" id="marcs" href="marcacoes.html">Marcações</a>
+              <a class="dropdown-item" id="favs" href="Favoritos.html">Favoritos</a>
+              <a class="dropdown-item" id="edit" href="EditarPerfil.html">Perfil</a>
+              <a class="dropdown-item" id="sair" onclick="Sair()">Sair</a>
+
+            </div>
+          </div>
         </div>
-      </ul>
+    
 </nav>
-<div style="position: fixed; z-index: -1;"><img  style="width:90%; margin-left:5%; text-align: center; margin-top:-19px;" src="https://images.assettype.com/thequint/2017-09/163185c5-e40b-4b62-8232-3c95197b4383/neon-14.jpg"></div>
 <!--_______________________________________botoes de pesquisa______________________________________-->
-<div style="background-color:transparent;text-align: center;">
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Cabelo</button>
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Unhas</button>
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Remoçao de Cabelo</button>
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Estética</button>
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Massagens</button>
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Maquilhagem</button>
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Barba</button>
-    <button type="button" class="btn btn-light"style="color:white;background-color:transparent">Spa</button>
+<div style="text-align: center;position: fixed;width: 100%;">
+    <button type="button" onclick="Filtrar('Cabelo')" value="cabelo" id="cabelo" class="btn classe">Cabelo</button>
+    <button type="button" onclick="Filtrar('Unhas')" value="unhas" id="unhas" class="btn classe">Unhas</button>
+    <button type="button" onclick="Filtrar('Remoçao de Cabelo')" value="remoçao de cabelo" id="remcabelo"class="btn classe">Remoçao de Cabelo</button>
+    <button type="button" onclick="Filtrar('Estética')" value="estetica" id="estetica" class="btn classe">Estética</button>
+    <button type="button" onclick="Filtrar('Massagens')" value="masssagens" id="massagens" class="btn classe">Massagens</button>
+    <button type="button" onclick="Filtrar('Maquilhagem')" value="maquilhagem" id="maquilhagem" class="btn classe">Maquilhagem</button>
+    <button type="button" onclick="Filtrar('Barba')" value="barba" id=" barba" class="btn classe">Barba</button>
+    <button type="button" onclick="Filtrar('Spa')" value="spa" id="spa" class="btn classe">Spa</button>
   </div>
   <!--_______________________________________barra de pesquisa_________________________________________-->
-  <div style="text-align: center;">
-  <form>
-  <input class="searchbar" style="width: 300px; height: 30px; border-radius:5px; margin-top:15px;" placeholder="   Pesquisa por instituto"></input>
   
-  <button  class="btn btn-dark"style="background-color:transparent; display: inline-block"><i class="fas fa-search"></i></button>
-</form>
-<section id="institutos">
-</section>
+  <div style="z-index:1;position: fixed;width:35%;margin-left:32.5%;text-align: center;margin-top: 70px;">
+  <input id="searchloc" class="searchbar" style="width: 300px; height: 30px; border-radius:5px;" placeholder="Pesquisa por instituto">
+  <button onclick="Search()" class="btn btn-dark" style="background-color:transparent; display: inline-block;"><i class="fas fa-search"></i></button>
   </div>
+</div>
+<div class="content">
+<section id="institutos" style="text-align: center;">
+</section>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="Js/Classes.js"></script>
   <script src="Js/Institutos.js"></script>
   <script src="Js/Utilizadores.js"></script>
   <script src="Js/LoadInstitutos.js"></script>

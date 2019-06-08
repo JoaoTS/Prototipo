@@ -1,47 +1,72 @@
 <head>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
         <link rel="stylesheet"  type="text/css" href="Css/detalhes.css">
     </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-<!--_______________________________________navbar____________________________________________-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto" style="margin-top:20px;">
-                        <a class="nav-link" href="index.html" style="margin-top: -5px;"> <img src="Imagens/logoverdadeiro.png" style="height:50px;">                                </a>
-                </div>
-                <div>
-                        <a style = "float:right; margin-right: 30px;color:black;" href="marcacoes.html">
-                        <i class="fa fa-calendar fa-3x"></i>
-                        </a>
-                    </div>
-                    <div>
-                      <a style = "float:right; margin-right: 30px;color:black;" href="Login.html">
-                      <i class="fas fa-user fa-3x" ></i>
-                      </a>
-                    </div>
-                  </ul>
-            </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"style="height:80px;;width:100%">
+        
+      
+  
+    <a class="nav-link" href="index.html" style="margin-top: 5px;"> <img src="Imagens/logoverdadeiro.png" style="height:50px; min-width: 5%;"></a>
+
+  <div style="width: 5%;float:right;margin-right: 5%;" class="ml-auto">
+  <a id="log" class="login" href="Login.html">          
+    <i class="fas fa-user fa-3x" style="color: black;"></i>
+  </a>
+  <div id="dropdownindex"class="dropdown d-none">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-user fa-3x" ></i>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" >
+      <a class="dropdown-item" id="marcs" href="marcacoes.html">Marcações</a>
+      <a class="dropdown-item" id="favs" href="Favoritos.html">Favoritos</a>
+      <a class="dropdown-item" id="edit" href="EditarPerfil.html">Perfil</a>
+      <a class="dropdown-item" id="sair" onclick="Sair()">Sair</a>
+
+    </div>
+  </div>
+</div>
+
+</nav>
 
             <!--_________________________________navbar______________________________________-->
             <!--__________________________anuncios individual________________________________-->
         <!--___________________________________________Descrição______________________________-->
-            <div id="caixainst">
-                <img id="imagem" src="Imagens/spa1.png">
-            <div id="principal">
+            <div id="caixainst" class="content">
+              <div id="inicial" class="row">
+                <img class="col-lg-4 vol-md-12 col-sm-12" id="imagem" src="Imagens/spa1.png">
+            <div id="principal" class="col-lg-8 col-md-12 col-sm-12 col-12">
+              
+              
+              <div class="row" style="text-align: center;">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12">
                 <h1 id="titulo"></h1>
-                <label>Descrição:</label>
-                <p id="descricao"></p>
-                <div id="localização">
+              </div>
+              <div class="col-lg-5 col-md-6 col-sm-6 col-11">
+                  <label id="avalia">Avaliação: <i class="fas fa-star"></i><i class="fas fa-star">
+                    </i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-1"><label><i class="fas fa-heart"></i></label></div>
+              </div>
+
+              <div class="row">
+                <div id="localização" class="col-lg-4 col-md-4 col-sm-12">
                 <p id="locbtn">Localização:</p>
                 
                 <p id="local"></p>
-        </div>
+              </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+        <label>Descrição:</label>
+                <p id="descricao"></p>
+              </div>
+              </div>  
+            </div>
+          </div>
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
@@ -52,9 +77,8 @@
             </div>
           </div>
                             <!--Modal Content-->
-                <p id="avalia">Avaliação: <i class="fas fa-star"></i><i class="fas fa-star">
-                </i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-            </div>
+              
+            
             <!--______________________________________Descrição_____________________________-->
             <hr>
             <!--________________________________Serviços__________________________________-->
@@ -64,9 +88,13 @@
         <!--_________________________________Serviços_________________________________-->
             <!--__________________________anuncios individual________________________________-->
 
-
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>            
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&callback=myMap"></script>
+            <script src="Js/Classes.js"></script>
             <script src="JS/Institutos.js"></script>
             <script src="Js/Marcacao.js"></script>
             <script src="Js/detalhes.js"></script>
+            <script src="Js/Utilizadores.js"></script>
 </body>
